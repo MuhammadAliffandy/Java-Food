@@ -1,0 +1,249 @@
+body{
+    background-color: #f3f2f2 ;
+    overflow-x: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+}
+
+.header .ull li{
+    font-size: 12px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-decoration: none;   
+}
+
+#menu-btn{
+    display: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 25px ; 
+}
+
+
+li a:hover{
+    padding: 10px 25px ;
+    background: orangered;
+    border-radius: 15px;
+    color:white;
+}
+
+.header .ull{
+    text-align: right;
+    margin: 0px  0px 40px 0px;
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+}
+li a.suges{
+    padding: 10px 25px ;
+    background: orangered;
+    border-radius: 15px;
+    color:white;
+}
+.judull{
+    display: flex;
+    justify-content: center;
+}
+
+.suggestion{
+    width: 100%;
+    width: max-content;
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    padding: 17px 80px;
+    background-color: #FF9C54;
+    border-radius: 26px;
+    box-shadow: 0px 12px 25px 6px rgba(0, 0, 0, 0.25);;
+}
+
+.kolom label{
+    display: flex;
+    justify-content: center;
+
+}
+
+.Kritik , .Saran{
+    border-radius: 19px;
+    width:1100px;
+    height: 170px;
+}
+
+textarea::placeholder{
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.kolom{
+    display: flexbox;
+    width: max-content;
+    margin: 0px auto;
+
+}
+
+.kolom h3{
+    width: max-content;
+    font-family: 'Poppins';
+    font-size: 25px;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    color: rgba(180, 77, 3, 1);
+}
+
+.tekan{
+    width:1050px;
+    height: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0px auto;
+    position: absolute;
+    align-items: flex-end;
+}
+
+.buttonk ,.buttons{
+    color: white;
+    padding: 10px 30px;
+    background-color: #FF9C54;
+    border-radius: 20px;
+    border-color: transparent;
+    position: absolute;
+}
+
+
+@media screen  and (max-width: 1200px){
+
+    .Kritik , .Saran{
+        width: 700px;
+    }
+
+    .tekan{
+        width:650px;
+        height: 150px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0px auto;
+        position: absolute;
+        align-items: flex-end;
+    }
+    
+
+    .kolom h3{
+        width: 100%;
+        width: max-content;
+        font-size: 25px;
+        display: flex;
+        justify-content: left;
+        margin-bottom: 20px;
+        color: rgba(180, 77, 3, 1);
+    }
+
+}
+@media screen  and (max-width: 800px){
+    .suggestion{
+        width: max-content;
+        font-size: 35px;
+        padding: 17px 80px;
+    }
+
+    .kolom h3{
+        font-size: 20px;
+    }
+
+    .Kritik , .Saran{
+        width: 500px;
+        height: 150px ;
+    }
+
+    .tekan{
+        width:450px;
+        height: 130px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0px auto;
+        position: absolute;
+        align-items: flex-end;
+    }
+}
+
+@media screen  and (max-width: 600px){
+    .suggestion{
+        width: max-content;
+        font-size: 25px;
+        padding: 17px 80px;
+    }
+
+    .kolom h3{
+        font-size: 15px;
+    }
+
+
+    .Kritik , .Saran{
+        width: 400px;
+        height: 140px ;
+    }
+    .tekan{
+        width:350px;
+        height: 125px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0px auto;
+        position: absolute;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 900px){
+    #menu-btn{
+        display: inline-block;
+        margin-right: 30px;
+        color: #FF9C54;
+    }
+    
+
+    .header .ull li{
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 13px;
+        height: 50px;
+    }
+
+    
+    a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    .header #ull{
+        right: 5%;
+        top: 9%;
+    }
+    
+    
+    .header #ull{
+        border-radius: 12px;
+        height: 400px;
+        width: 140px;
+        visibility: hidden;
+        text-align: right;
+        display:block;
+        box-shadow: 0px 12px 25px 6px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        background-color: #FF9C54;
+        z-index: 2;
+    
+    }
+
+
+}
